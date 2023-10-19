@@ -11,7 +11,6 @@ function App() {
   const isLogin = !!token;
 
   return (   
-    
     <AuthContext.Provider
       value={{ login, logOut, token, userId, isReady, isLogin }}
     >
