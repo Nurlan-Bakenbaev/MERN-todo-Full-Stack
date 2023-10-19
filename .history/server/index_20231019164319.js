@@ -6,7 +6,6 @@ const PORT = 4000;
 const authRouter = require("./routes/auth.route");
 const todoRouter = require("./routes/todo.route");
 require('dotenv').config()
-
 app.use(express.json());
 app.use(
   cors({

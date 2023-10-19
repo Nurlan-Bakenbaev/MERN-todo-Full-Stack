@@ -19,7 +19,7 @@ const Register = () => {
   const registerHandler = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/auth/registration",
+        "https://mern-todo-opal.vercel.app/api/auth/registration",
         { ...form },
         {
           headers: {

@@ -33,7 +33,7 @@ const Login = () => {
           if (response) {
             navigate("/home");
           }
-
+         
           login(response.data.token, response.data.userId, response.data.email);
         });
     } catch (error) {
@@ -78,7 +78,8 @@ const Login = () => {
               <p
                 className="text-right
                hover:text-blue-500 
-               cursor-pointer text-gray-500" >
+               cursor-pointer text-gray-500"
+              >
                 Create an account?
               </p>
             </Link>

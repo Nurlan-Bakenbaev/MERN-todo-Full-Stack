@@ -5,7 +5,6 @@ const app = express();
 const PORT = 4000;
 const authRouter = require("./routes/auth.route");
 const todoRouter = require("./routes/todo.route");
-require('dotenv').config()
 
 app.use(express.json());
 app.use(
@@ -21,8 +20,7 @@ app.use("/api/todo", todoRouter);
 async function start() {
   try {
     await mongoose.connect(
-      "mongodb+srv://nurlan:04121991@database.l7faqwy.mongodb.net/?retryWrites=true&w=majority"
-    );
+      "mongodb+srv://nurlan:<password>@database.l7faqwy.mongodb.net/?retryWrites=true&w=majority" );
     console.log("mongo DB is working");
     app.listen(PORT, () => {
       console.log(`Server on ${PORT}`);
